@@ -1,8 +1,17 @@
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
+
 export default function Teaser({ blok }) {
-    return (
-        <div className="teaser shadow-md p-4 rounded-md bg-white border border-gray-200">
-            <h2 className="text-2xl font-bold">{blok.headline}</h2>
-            <p className="text-gray-600">{blok.description}</p>
-        </div>
-    );
-    }
+  return (
+    <Card className="teaser">
+      <CardHeader>
+        <CardTitle className="text-2xl">{blok.headline}</CardTitle>
+        <CardDescription>{blok.description}</CardDescription>
+      </CardHeader>
+    </Card>
+  );
+}
