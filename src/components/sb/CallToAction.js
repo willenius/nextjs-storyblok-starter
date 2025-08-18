@@ -1,17 +1,16 @@
 
 //color blue, black, red
 
-const colors = {
-    blue: "bg-blue-500 text-white hover:bg-blue-600",
-    black: "bg-black text-white hover:bg-gray-800",
-    red: "bg-red-500 text-white hover:bg-red-600",
-}
+import Link from "next/link";
+import { Button } from "../ui/button";
+
 
 export default function CallToAction({ blok }) {
-    const colorClass = colors[blok.color]
     return (
-        <button className={`${colorClass} px-4 py-2 rounded-md`}>
-            {blok.label}
-        </button>
+        <Link href={blok.link.url}>
+            <Button variant={blok.color}>
+                {blok.title}
+            </Button>
+        </Link>
     );
 }
