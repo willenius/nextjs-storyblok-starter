@@ -5,8 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Feature({ blok }) {
   return (
     <Card
+    {...storyblokEditable(blok)}
       className="w-75 pt-0"
-      {...storyblokEditable(blok)}
     >
       <img
         src={`https://picsum.photos/250/250?random=${blok._uid}`}
