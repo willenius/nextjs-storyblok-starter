@@ -8,7 +8,7 @@ export default function Feature({ blok }) {
       {...storyblokEditable(blok)}
     >
       <img
-        src={`https://picsum.photos/250/250?random=${blok._uid}`}
+        src={`https://www.dif.se/_next/image?url=https%3A%2F%2Fbackend.dif.se%2Fmedia%2Fqw2frz1n%2Fdif_fotboll_lockup_vertical_rgb.png&w=828&q=80=${blok._uid}`}
         alt={blok.name}
         className="w-full aspect-square object-cover rounded-md"
       />
